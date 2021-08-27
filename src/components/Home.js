@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+// import Signup from "./Signup";
 
 const Container = styled.div`
   box-sizing: border-box;
@@ -108,6 +109,12 @@ export default function Home() {
                     <span className="navspans">
                         <Link to="/">Home</Link>
                     </span>
+                    <span className="navspans">
+                        <Link to="/">Home</Link>
+                    </span>
+                    <span className="navspans">
+                        <Link to="/">Home</Link>
+                    </span>
                 </nav>
             </header>
             <div className="whole">
@@ -122,10 +129,8 @@ export default function Home() {
                         The Potluck Planner
                     </h1>
                     <div className="button-container">
-                        <Link to="/signup">
-                            <button className="create-acctBtn">
-                                Signup
-                            </button>
+                        <Link to="/Signup">
+                            <button className="create-acctBtn">Signup</button>
                         </Link>
                         <Link to="/login">
                             <button className="loginBtn">Login</button>

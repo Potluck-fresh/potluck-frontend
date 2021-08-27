@@ -8,6 +8,7 @@ import Signup from './components/Signup';
 import Home from './components/Home';
 import styled from 'styled-components';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import PrivateRoute from './components/PrivateRoute.js'
 
 const StyledBody = styled.div`
   background-color: ${({ theme }) => theme.secondaryColor};
@@ -28,12 +29,30 @@ function App() {
     <div className="App">
     <StyledBody className="App">
       <Switch>
-      <Home />
+        <Route path="/home">
+      <Home/>
+      </Route>
+      
+      {/* <Route path="/login">
       <Login />
-      {/* <Logout /> */}
+      </Route>
+
+      <Route path="/logout">
+      <Logout />
+      </Route>
+
+      <Route path="/signup">
       <Signup />
+      </Route> */}
+
+      {/* <PrivateRoute path="/planner">
       <PotluckPlanner />
+      </PrivateRoute>
+
+      <PrivateRoute path="CreatePotluck">
       <CreatePotluck/>
+      </PrivateRoute> */}
+
       </Switch>
       </StyledBody>
     </div>
