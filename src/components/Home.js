@@ -122,9 +122,9 @@ export default function Home() {
                         The Potluck Planner
                     </h1>
                     <div className="button-container">
-                        <Link to="/logout">
+                        <Link to="/signup">
                             <button className="create-acctBtn">
-                                Create&nbsp;an&nbsp;Account
+                                Signup
                             </button>
                         </Link>
                         <Link to="/login">

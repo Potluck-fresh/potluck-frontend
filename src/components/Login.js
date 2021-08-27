@@ -8,7 +8,7 @@ import CreatePotluck from './CreatePotluck';
 const Login = ()=>{
     const [value, setValue]= useState({username: "",
     password: ""})
-    
+
 
     const handleChange = e => {
         setValue({
@@ -23,8 +23,7 @@ const Login = ()=>{
           .then(res => {
               console.log(res)
             localStorage.setItem("token", res.data.token);
-         
-            // this.props.history.push('/friends')
+
           })
           .catch(err=> {
             console.log(err);
@@ -51,7 +50,7 @@ return(
           /><br/>
           <button style={{padding:'10px'}}>Log in</button>
         </form>
-        
+
     </div>
 )
 }
