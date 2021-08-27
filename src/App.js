@@ -31,6 +31,7 @@ function App() {
       <Home />
       <Login />
       {/* <Logout /> */}
+      
       <Signup />
       <PotluckPlanner />
       <CreatePotluck/>
