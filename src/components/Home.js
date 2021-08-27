@@ -99,7 +99,7 @@ const Container = styled.div`
   }
 `;
 
-export default function Home(){
+export default function Home() {
     return (
         <Container>
             <header>
@@ -108,15 +108,6 @@ export default function Home(){
                     <span className="navspans">
                         <Link to="/">Home</Link>
                     </span>
-                    {/* <span className="navspans">
-                        <Link to="/dashboard">DashBoard</Link>
-                    </span>
-                    <span className="navspans">
-                        <Link to="/my-profile">My&nbsp;Profile</Link>
-                    </span>
-                    <span className="navspans">
-                        <Link to="/meet-team">Meet&nbsp;Our&nbsp;Team</Link>
-                    </span> */}
                 </nav>
             </header>
             <div className="whole">
@@ -131,16 +122,13 @@ export default function Home(){
                         The Potluck Planner
                     </h1>
                     <div className="button-container">
-                        <Link to="/landing">
+                        <Link to="/logout">
                             <button className="create-acctBtn">
                                 Create&nbsp;an&nbsp;Account
                             </button>
                         </Link>
-
                         <Link to="/login">
-                            <button  className="loginBtn">
-                                Login
-                            </button>
+                            <button className="loginBtn">Login</button>
                         </Link>
                     </div>
                 </div>
