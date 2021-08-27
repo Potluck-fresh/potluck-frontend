@@ -107,13 +107,16 @@ export default function Home() {
                 <h1 id="hide">POTLUCK PLANNER</h1>
                 <nav>
                     <span className="navspans">
-                        <Link to="/">Home</Link>
+                        <Link to="/">Login</Link>
                     </span>
                     <span className="navspans">
-                        <Link to="/">Home</Link>
+                        <Link to="/">Dashboard</Link>
                     </span>
                     <span className="navspans">
-                        <Link to="/">Home</Link>
+                        <Link to="/">My Profile</Link>
+                    </span>
+                    <span className="navspans">
+                        <Link to="/">Meet our Team</Link>
                     </span>
                 </nav>
             </header>
