@@ -1,47 +1,19 @@
 
 import './App.css';
-import Home from './components/Home'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import Login from './components/Login';
-// import Logout from './components/Logout';
-import styled from "styled-components";
-
-const StyledBody = styled.div`
-  background-color: ${({ theme }) => theme.secondaryColor};
-  header {
-    background-color: ${({ theme }) => theme.primaryColor};
-  }
-
-  header nav a {
-    background-color: ${({ theme }) => theme.secondaryColor};
-  }
-  header nav a:hover {
-    background-color: ${({ theme }) => theme.secondaryColor};
-  }
-`;
-
+import CreatePotluck from './components/CreatePotluck';
+import Login from './components/Login'
+import Logout from './components/Logout'
+import PotluckPlanner from './components/PotluckPlanner';
+import Signup from './components/Signup';
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <StyledBody className="App">
-          <Switch>
-            <Route path='/home'>
-              <Home />
-            </Route>
-{/* 
-            <Route path="/login">
-              <Login />
-            </Route>
-
-            <Route path="/logout">
-              <Logout />
-            </Route> */}
-
-          </Switch>
-        </StyledBody>
-      </div>
-    </Router>
+    <div className="App">
+      <Login />
+      {/* <Logout /> */}
+      <Signup />
+      <PotluckPlanner />
+      <CreatePotluck/>
+    </div>
   );
 }
 
