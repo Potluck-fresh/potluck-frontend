@@ -107,7 +107,7 @@ export default function Home() {
                 <h1 id="hide">POTLUCK PLANNER</h1>
                 <nav>
                     <span className="navspans">
-                        <Link to="/">Login</Link>
+                        <Link to="/login">Login</Link>
                     </span>
                     <span className="navspans">
                         <Link to="/">Dashboard</Link>
@@ -123,7 +123,7 @@ export default function Home() {
             <div className="whole">
                 <div className="main">
                     <h3>
-                        Tired of being the one stuck planning EVERY potluck? Well, let us
+                        Tired of being the one stuck planning EVERY potluck? <br></br> Well, let us
                         make it easier.
                     </h3>
                     <h1>

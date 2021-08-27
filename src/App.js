@@ -26,43 +26,19 @@ const StyledBody = styled.div`
 function App() {
   return (
     <Router>
-    <div className="App">
-    <StyledBody className="App">
-      <Switch>
-        <Route path="/">
-      <Home/>
-      </Route>
-      
-      <Route path="/login">
-      <Login />
-
-      </Route>
-
-      <Route path="/logout">
-      <Logout />
-      </Route>
-
-      <Route path="/signup">
-
-      <Signup />
-      </Route> 
-
-      <PrivateRoute path="/planner">
-      <PotluckPlanner />
-      </PrivateRoute>
-
-      <PrivateRoute path="/CreatePotluck">
-      <CreatePotluck/>
-      </PrivateRoute> 
-
-      <Route>
-
-      </Route>
-
-
-      </Switch>
-      </StyledBody>
-    </div>
+      <div className="App">
+        <StyledBody className="App">
+          <Switch>
+            <PrivateRoute path="/planner"><PotluckPlanner /></PrivateRoute>
+            <PrivateRoute path="/CreatePotluck"><CreatePotluck /></PrivateRoute>
+            <Route path="/"><Home /></Route>
+            <Route path="/login"><Login /></Route>
+            <Route path="/logout"><Logout /></Route>
+            <Route path="/signup"><Signup /></Route>
+            <Route></Route>
+          </Switch>
+        </StyledBody>
+      </div>
     </Router>
   );
 }
