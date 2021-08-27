@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+
+const theme =
+{
+  primaryColor: "#284B63",
+  secondaryColor: "#D9D9D9",
+  accentColor: "#3C6E71",
+  black: "#353535",
+  white: "FFFFFF",
+};
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ThemeProvider theme={theme}>
+    <Router>
+        <App />
+    </Router>
+  </ThemeProvider>,
   document.getElementById('root')
 );
 
