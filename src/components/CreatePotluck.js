@@ -8,8 +8,9 @@ export default function CreatePotluck(props) {
         potluck_date: "",
         potluck_time: "",
         potluck_location: "",
-        organizer: props.id
+        organizer: null
     })
+    console.log(props)
 
     const handleChange = e => {
         setValue({
@@ -17,7 +18,7 @@ export default function CreatePotluck(props) {
             [e.target.name]: e.target.value
         });
       };
-      console.log(value.organizer)
+      
       const submit = e =>{
           e.preventDefault()
           axiosWithAuth()
