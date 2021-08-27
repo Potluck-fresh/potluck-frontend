@@ -8,7 +8,7 @@ import CreatePotluck from './CreatePotluck';
 const Login = ()=>{
     const [value, setValue]= useState({username: "",
     password: ""})
-    let id=0;
+    
 
     const handleChange = e => {
         setValue({
@@ -21,8 +21,9 @@ const Login = ()=>{
         e.preventDefault(); 
         axios.post('https://potluck-planner-2.herokuapp.com/api/auth/login', value)
           .then(res => {
+              console.log(res)
             localStorage.setItem("token", res.data.token);
-         id=res.data.user_id
+         
             // this.props.history.push('/friends')
           })
           .catch(err=> {
@@ -50,7 +51,7 @@ return(
           /><br/>
           <button style={{padding:'10px'}}>Log in</button>
         </form>
-        <CreatePotluck id={id}/> 
+        
     </div>
 )
 }

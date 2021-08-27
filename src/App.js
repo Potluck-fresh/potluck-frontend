@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <Login />
       {/* <Logout /> */}
+      
       <Signup />
       <PotluckPlanner />
       <CreatePotluck/>
