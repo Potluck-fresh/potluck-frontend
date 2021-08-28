@@ -31,7 +31,7 @@ function App() {
           <Switch>
             <PrivateRoute path="/planner"><PotluckPlanner /></PrivateRoute>
             <PrivateRoute path="/CreatePotluck"><CreatePotluck /></PrivateRoute>
-            <Route path="/"><Home /></Route>
+            <Route exact path="/"><Home /></Route>
             <Route path="/login"><Login /></Route>
             <Route path="/logout"><Logout /></Route>
             <Route path="/signup"><Signup /></Route>
